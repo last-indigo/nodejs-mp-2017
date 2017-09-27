@@ -1,3 +1,10 @@
+`/data`
+We will assume that in this directory our providers will put csv files with new products.
+
+
+----------------
+
+
 Env preset (http://babeljs.io/docs/plugins/preset-env)
 Babel preset that automatically determines the Babel plugins you need
 based on your supported environments. Uses compat-table

@@ -14,10 +14,11 @@ const dirwatcherEmitter = new EventEmitter();
 const dirwatcherInstance = new DirWatcher(dirwatcherEmitter);
 const importerInstance = new Importer(dirwatcherInstance);
 
+const path = require('path');
+const dirNameCSVFiles = './data/';
+
 let pathsToWatch = [
-  'path1',
-  'path2',
-  'path3',
+  path.resolve(__dirname, dirNameCSVFiles),
 ];
 pathsToWatch.forEach((pathBeingWatched) => {
   let delay = 1000;
